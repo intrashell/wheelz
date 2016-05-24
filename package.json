@@ -1,0 +1,9 @@
+{
+    "name": "Wheelz",
+    "main": "internal.js",
+    "dependencies": {
+        "express": "~4.0.0",
+        "body-parser": "~1.0.1",
+		"mysql": "2.10.2"
+    }
+}
