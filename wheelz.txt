@@ -1,0 +1,6 @@
+Welcome to Wheelz API.
+
+This will be a project that will receive and send SMS message, manage
+queues, users, addresses, and more.
+
+
