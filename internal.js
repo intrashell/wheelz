@@ -23,7 +23,7 @@ router.post('/', function(req, res, next) {
     res.end();
 });
 
-router.get('/test/:hello/:world', function(req, res) {
+router.get('/test/', function(req, res) {
     var url = req.params;
     console.log(url.hello + ' ' + url.world);
     res.end();
