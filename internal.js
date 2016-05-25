@@ -5,7 +5,9 @@
 var express    = require('express');        // call express
 var app        = express();                 // define our app using express
 var bodyParser = require('body-parser');
-var db = require('mysql');
+var wDB = require('./database.js');
+
+var whData = new wDB('lite');
 
 // this will let us get the data from a POST
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -16,12 +18,6 @@ var port = process.env.PORT || 10101;        // set our port
 // ROUTES FOR OUR API
 // =============================================================================
 var router = express.Router();              // get an instance of the express Router
-
-
-router.post('/', function(req, res, next) {
-    console.log(req.body);
-    res.end();
-});
 
 router.get('/test/', function(req, res) {
     var url = req.params;
